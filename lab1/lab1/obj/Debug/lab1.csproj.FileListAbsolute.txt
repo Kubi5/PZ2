@@ -1,8 +1,0 @@
-C:\Users\FiFi\source\repos\lab1\lab1\bin\Debug\lab1.exe.config
-C:\Users\FiFi\source\repos\lab1\lab1\bin\Debug\lab1.exe
-C:\Users\FiFi\source\repos\lab1\lab1\bin\Debug\lab1.pdb
-C:\Users\FiFi\source\repos\lab1\lab1\obj\Debug\lab1.csproj.AssemblyReference.cache
-C:\Users\FiFi\source\repos\lab1\lab1\obj\Debug\lab1.csproj.SuggestedBindingRedirects.cache
-C:\Users\FiFi\source\repos\lab1\lab1\obj\Debug\lab1.csproj.CoreCompileInputs.cache
-C:\Users\FiFi\source\repos\lab1\lab1\obj\Debug\lab1.exe
-C:\Users\FiFi\source\repos\lab1\lab1\obj\Debug\lab1.pdb
