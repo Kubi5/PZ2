@@ -1,0 +1,12 @@
+C:\Users\FiFi\source\repos\MemoryGame\MemoryGame\bin\Release\MemoryGame.exe.config
+C:\Users\FiFi\source\repos\MemoryGame\MemoryGame\bin\Release\MemoryGame.exe
+C:\Users\FiFi\source\repos\MemoryGame\MemoryGame\bin\Release\MemoryGame.pdb
+C:\Users\FiFi\source\repos\MemoryGame\MemoryGame\obj\Release\MemoryGame.csproj.AssemblyReference.cache
+C:\Users\FiFi\source\repos\MemoryGame\MemoryGame\obj\Release\MemoryGame.csproj.SuggestedBindingRedirects.cache
+C:\Users\FiFi\source\repos\MemoryGame\MemoryGame\obj\Release\MemoryGame.Form1.resources
+C:\Users\FiFi\source\repos\MemoryGame\MemoryGame\obj\Release\MemoryGame.Form2.resources
+C:\Users\FiFi\source\repos\MemoryGame\MemoryGame\obj\Release\MemoryGame.Properties.Resources.resources
+C:\Users\FiFi\source\repos\MemoryGame\MemoryGame\obj\Release\MemoryGame.csproj.GenerateResource.cache
+C:\Users\FiFi\source\repos\MemoryGame\MemoryGame\obj\Release\MemoryGame.csproj.CoreCompileInputs.cache
+C:\Users\FiFi\source\repos\MemoryGame\MemoryGame\obj\Release\MemoryGame.exe
+C:\Users\FiFi\source\repos\MemoryGame\MemoryGame\obj\Release\MemoryGame.pdb

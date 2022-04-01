@@ -1,0 +1,12 @@
+﻿Audi,A1,2.0 TDI,bialy
+Audi,A1,1.5 FSI,czarny
+Audi,Q5,3.0 TDI,czerwony
+Audi,Q7,4.0 TDI,czarny
+BMW,X5,3.0 FSI,zielony
+BWM,X5,4.0 TDI,bialy
+Opel,Astra,1.2 FSI,zolty
+Skoda,Fabia,1.0 FSI,zielony
+Opel,Astra,2.0 TDI,czarny
+Opel,Astra,2.0 TDI,szary
+Renault,Megane,1.5 TDI,czarny
+Renault,Megane,1.6 FSI,bialy
