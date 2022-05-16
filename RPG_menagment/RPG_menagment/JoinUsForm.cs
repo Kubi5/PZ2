@@ -40,12 +40,13 @@ namespace RPG_menagment
             if (SafetySystem.arePasswordtheSame(textBox2.Text, textBox3.Text) &&
                 SafetySystem.isEmailValid(textBox1.Text) && SafetySystem.isPasswordValid(textBox2.Text))
             {
-                User user = new User()
+                User user = new User();
+                user.Email = textBox1.Text;
+                user.Password = SafetySystem.hashingPassword(textBox2.Text);
+                if (textBox4.Text != "")
                 {
-                    email = textBox1.Text,
-                    password = textBox2.Text,
-                    nickname = textBox4.Text,
-                };
+                    user.Nickname = textBox4.Text;
+                }
                 ContextActions.AddUsertoDB(user);
                 this.CleanTheTextboxes();
                 return;

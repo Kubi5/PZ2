@@ -165,6 +165,12 @@
     <Compile Include="JoinUsForm.Designer.cs">
       <DependentUpon>JoinUsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainApp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainApp.Designer.cs">
+      <DependentUpon>MainApp.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\20220514134156_addedUsers.cs" />
     <Compile Include="Migrations\20220514134156_addedUsers.designer.cs">
       <DependentUpon>20220514134156_addedUsers.cs</DependentUpon>
@@ -188,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JoinUsForm.resx">
       <DependentUpon>JoinUsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainApp.resx">
+      <DependentUpon>MainApp.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

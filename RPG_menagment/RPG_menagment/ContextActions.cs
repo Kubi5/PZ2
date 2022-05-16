@@ -24,7 +24,7 @@ namespace RPG_menagment
         public static bool IsEmailAlreadyinDatabase(string email)
         {
             var user = context.Users
-                            .Where(x => x.email == email);
+                            .Where(x => x.Email == email);
 
             return user.Any();
         }
@@ -32,12 +32,14 @@ namespace RPG_menagment
         public static bool isEmailandPasswordinDB(string email, string password)
         {
             var userpassword = context.Users
-                            .Where(x => x.email == email)
-                            .Select(x => x.password);
+                            .Where(x => x.Email == email)
+                            .Select(x => x.Password);
 
+            string hashedPassword = SafetySystem.hashingPassword(password);
+            
             foreach (string var in userpassword)
             {
-                return password.Equals(var);
+                return hashedPassword.Equals(var);
             }
 
             return false;

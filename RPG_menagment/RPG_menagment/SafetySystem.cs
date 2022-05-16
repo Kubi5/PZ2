@@ -27,7 +27,13 @@ namespace RPG_menagment
             return password1.Equals(password2);
         }
 
-        
+        public static string hashingPassword(string password)
+        {
+            byte[] data = Encoding.ASCII.GetBytes(password);
+            data = new System.Security.Cryptography.SHA256Managed().ComputeHash(data);
+            String hash = Encoding.ASCII.GetString(data);
+            return hash;
+        }
 
     }
 }
