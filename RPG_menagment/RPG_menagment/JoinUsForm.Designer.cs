@@ -44,6 +44,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(428, 32);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(242, 61);
@@ -69,6 +70,7 @@
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(177, 231);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(275, 61);
@@ -78,6 +80,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Century", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(178, 344);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(526, 61);
@@ -87,6 +90,7 @@
             // label3
             // 
             this.label3.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label3.ForeColor = System.Drawing.Color.White;
             this.label3.Location = new System.Drawing.Point(177, 475);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(377, 56);
@@ -126,6 +130,7 @@
             // label5
             // 
             this.label5.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label5.ForeColor = System.Drawing.Color.White;
             this.label5.Location = new System.Drawing.Point(177, 114);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(543, 61);

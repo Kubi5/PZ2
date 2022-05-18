@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RPG_menagment.Data;
 
 namespace RPG_menagment.Migrations
 {
     [DbContext(typeof(RPGcontext))]
-    partial class RPGcontextModelSnapshot : ModelSnapshot
+    [Migration("20220518185259_smthngIsWorking")]
+    partial class smthngIsWorking
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -44,6 +46,9 @@ namespace RPG_menagment.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("FightingCharacterID")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -54,14 +59,15 @@ namespace RPG_menagment.Migrations
                     b.Property<int>("UserID")
                         .HasColumnType("int");
 
-                    b.Property<string>("Wingspan")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<float>("Wingspan")
+                        .HasColumnType("real");
 
                     b.Property<int>("dragonSpicies")
                         .HasColumnType("int");
 
                     b.HasKey("DragonID");
+
+                    b.HasIndex("FightingCharacterID");
 
                     b.HasIndex("UserID");
 
@@ -117,6 +123,9 @@ namespace RPG_menagment.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("FightingCharacterID")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -128,6 +137,8 @@ namespace RPG_menagment.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("MagicianID");
+
+                    b.HasIndex("FightingCharacterID");
 
                     b.HasIndex("UserID");
 
@@ -141,6 +152,9 @@ namespace RPG_menagment.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("FightingCharacterID")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -152,6 +166,8 @@ namespace RPG_menagment.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("OrcID");
+
+                    b.HasIndex("FightingCharacterID");
 
                     b.HasIndex("UserID");
 
@@ -184,6 +200,9 @@ namespace RPG_menagment.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("FightingCharacterID")
+                        .HasColumnType("int");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -199,6 +218,8 @@ namespace RPG_menagment.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("SoldierID");
+
+                    b.HasIndex("FightingCharacterID");
 
                     b.HasIndex("UserID");
 
@@ -256,6 +277,12 @@ namespace RPG_menagment.Migrations
 
             modelBuilder.Entity("RPG_menagment.Data.Model.RPGmodel+Dragon", b =>
                 {
+                    b.HasOne("RPG_menagment.Data.Model.RPGmodel+FightingCharacter", "fightingCharacter")
+                        .WithMany()
+                        .HasForeignKey("FightingCharacterID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("RPG_menagment.Data.Model.RPGmodel+User", "user")
                         .WithMany()
                         .HasForeignKey("UserID")
@@ -265,6 +292,12 @@ namespace RPG_menagment.Migrations
 
             modelBuilder.Entity("RPG_menagment.Data.Model.RPGmodel+Magician", b =>
                 {
+                    b.HasOne("RPG_menagment.Data.Model.RPGmodel+FightingCharacter", "fightingCharacter")
+                        .WithMany()
+                        .HasForeignKey("FightingCharacterID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("RPG_menagment.Data.Model.RPGmodel+User", "user")
                         .WithMany()
                         .HasForeignKey("UserID")
@@ -274,6 +307,12 @@ namespace RPG_menagment.Migrations
 
             modelBuilder.Entity("RPG_menagment.Data.Model.RPGmodel+Orc", b =>
                 {
+                    b.HasOne("RPG_menagment.Data.Model.RPGmodel+FightingCharacter", "fightingCharacter")
+                        .WithMany()
+                        .HasForeignKey("FightingCharacterID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("RPG_menagment.Data.Model.RPGmodel+User", "user")
                         .WithMany()
                         .HasForeignKey("UserID")
@@ -283,6 +322,12 @@ namespace RPG_menagment.Migrations
 
             modelBuilder.Entity("RPG_menagment.Data.Model.RPGmodel+Soldier", b =>
                 {
+                    b.HasOne("RPG_menagment.Data.Model.RPGmodel+FightingCharacter", "fightingCharacter")
+                        .WithMany()
+                        .HasForeignKey("FightingCharacterID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("RPG_menagment.Data.Model.RPGmodel+User", "user")
                         .WithMany()
                         .HasForeignKey("UserID")

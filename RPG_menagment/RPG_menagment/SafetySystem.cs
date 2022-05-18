@@ -35,5 +35,7 @@ namespace RPG_menagment
             return hash;
         }
 
+      
+
     }
 }

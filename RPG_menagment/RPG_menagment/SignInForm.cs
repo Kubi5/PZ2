@@ -12,9 +12,12 @@ namespace RPG_menagment
 {
     public partial class SignInForm : Form
     {
+
+        MainApp mainapp;
         public SignInForm()
         {
             InitializeComponent();
+            mainapp = new MainApp();
         }
         private void CleanAlltheTextboxes()
         {
@@ -25,8 +28,11 @@ namespace RPG_menagment
         {
             if (ContextActions.isEmailandPasswordinDB(textBox1.Text,textBox2.Text))
             {
-                //TODO : wyswietl nowego forma z apka docelowa
-                MessageBox.Show("Fine");
+                LoggedUser.InitiatingTheUser(textBox1.Text,
+                    ContextActions.getUserRole(textBox1.Text),
+                    ContextActions.getUserNickname(textBox1.Text));
+             
+                mainapp.ShowDialog();
             }
             else
             {

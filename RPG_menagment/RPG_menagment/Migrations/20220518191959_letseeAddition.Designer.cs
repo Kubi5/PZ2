@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RPG_menagment.Data;
 
 namespace RPG_menagment.Migrations
 {
     [DbContext(typeof(RPGcontext))]
-    partial class RPGcontextModelSnapshot : ModelSnapshot
+    [Migration("20220518191959_letseeAddition")]
+    partial class letseeAddition
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -54,9 +56,8 @@ namespace RPG_menagment.Migrations
                     b.Property<int>("UserID")
                         .HasColumnType("int");
 
-                    b.Property<string>("Wingspan")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<float>("Wingspan")
+                        .HasColumnType("real");
 
                     b.Property<int>("dragonSpicies")
                         .HasColumnType("int");

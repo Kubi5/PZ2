@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RPG_menagment.Data;
 
 namespace RPG_menagment.Migrations
 {
     [DbContext(typeof(RPGcontext))]
-    partial class RPGcontextModelSnapshot : ModelSnapshot
+    [Migration("20220518192858_testingWingspanAsString")]
+    partial class testingWingspanAsString
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

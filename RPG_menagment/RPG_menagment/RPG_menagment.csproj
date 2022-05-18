@@ -150,6 +150,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddingCharacters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddingCharacters.Designer.cs">
+      <DependentUpon>AddingCharacters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ChangingPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangingPassword.Designer.cs">
+      <DependentUpon>ChangingPassword.cs</DependentUpon>
+    </Compile>
     <Compile Include="ContextActions.cs" />
     <Compile Include="Data\Model\RPGmodel.cs" />
     <Compile Include="Data\RPGcontext.cs" />
@@ -165,6 +177,7 @@
     <Compile Include="JoinUsForm.Designer.cs">
       <DependentUpon>JoinUsForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoggedUser.cs" />
     <Compile Include="MainApp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,6 +192,22 @@
     <Compile Include="Migrations\20220514183237_addedUserNickname.designer.cs">
       <DependentUpon>20220514183237_addedUserNickname.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20220517124352_notallisgood.cs" />
+    <Compile Include="Migrations\20220517124352_notallisgood.designer.cs">
+      <DependentUpon>20220517124352_notallisgood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20220518185259_smthngIsWorking.cs" />
+    <Compile Include="Migrations\20220518185259_smthngIsWorking.designer.cs">
+      <DependentUpon>20220518185259_smthngIsWorking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20220518191959_letseeAddition.cs" />
+    <Compile Include="Migrations\20220518191959_letseeAddition.designer.cs">
+      <DependentUpon>20220518191959_letseeAddition.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20220518192858_testingWingspanAsString.cs" />
+    <Compile Include="Migrations\20220518192858_testingWingspanAsString.designer.cs">
+      <DependentUpon>20220518192858_testingWingspanAsString.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\RPGcontextModelSnapshot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -189,6 +218,12 @@
     <Compile Include="SignInForm.Designer.cs">
       <DependentUpon>SignInForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddingCharacters.resx">
+      <DependentUpon>AddingCharacters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangingPassword.resx">
+      <DependentUpon>ChangingPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

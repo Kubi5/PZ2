@@ -13,7 +13,7 @@ namespace RPG_menagment.Data
         public DbSet<User> Users { get; set; }
 
         public DbSet<FightingCharacter> FightingCharacters { get; set; }
-        public DbSet<LandscapeElement> LandscapeElements { get; set; }
+        //public DbSet<LandscapeElement> LandscapeElements { get; set; }
 
         public DbSet<Dragon> Dragons { get; set; }
         public DbSet<Magician> Magicians { get; set; }
