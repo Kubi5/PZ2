@@ -21,6 +21,24 @@ namespace RPG_menagment
             
         }
 
+        public string createHeaderforTOP5()
+        {
+            return $"No. -- Power -- Character -- Gamer\n" +
+                $"-------------------------------------------------\n";
+        }
+
+        public void createTOP5()
+        {
+            label1.Text = createHeaderforTOP5();
+            int i = 0;
+            label1.ForeColor = Color.Gold;
+            foreach (var topfighter in ContextActions.getTOP5())
+            {
+                label1.Text += $"{i + 1}. {topfighter} \n";
+                i++;
+            }
+        }
+
         public void AddFighters()
         {
             comboBox1.Items.Add("Dragon");
@@ -53,6 +71,7 @@ namespace RPG_menagment
         private void MainApp_Load(object sender, EventArgs e)
         {
             AddFighters();
+            createTOP5();
         }
 
         private void checkBox2_Click(object sender, EventArgs e)

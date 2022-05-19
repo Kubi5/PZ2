@@ -208,6 +208,14 @@
     <Compile Include="Migrations\20220518192858_testingWingspanAsString.designer.cs">
       <DependentUpon>20220518192858_testingWingspanAsString.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20220519083212_WorkingonMagician.cs" />
+    <Compile Include="Migrations\20220519083212_WorkingonMagician.designer.cs">
+      <DependentUpon>20220519083212_WorkingonMagician.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20220519155300_mozeniezrobilemmigracji.cs" />
+    <Compile Include="Migrations\20220519155300_mozeniezrobilemmigracji.designer.cs">
+      <DependentUpon>20220519155300_mozeniezrobilemmigracji.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\RPGcontextModelSnapshot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

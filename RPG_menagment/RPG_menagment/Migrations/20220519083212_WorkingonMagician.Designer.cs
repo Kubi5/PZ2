@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RPG_menagment.Data;
 
 namespace RPG_menagment.Migrations
 {
     [DbContext(typeof(RPGcontext))]
-    partial class RPGcontextModelSnapshot : ModelSnapshot
+    [Migration("20220519083212_WorkingonMagician")]
+    partial class WorkingonMagician
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -147,9 +149,6 @@ namespace RPG_menagment.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("OrcTribe")
-                        .HasColumnType("int");
 
                     b.Property<int>("Power")
                         .HasColumnType("int");

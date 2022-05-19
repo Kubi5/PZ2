@@ -75,6 +75,11 @@ namespace RPG_menagment.Data.Model
 
         }
 
+        public enum MagicianSpicies
+        {
+            Old, Elf, Dwarf
+        };
+
         public class Magician
         {
             public int MagicianID { get; set; }
@@ -83,10 +88,7 @@ namespace RPG_menagment.Data.Model
             [Required]
             public int Power { get; set; }
 
-            public enum Spiecies
-            {
-                Old, Elf, Dwarf
-            };
+            public MagicianSpicies magicianSpicies { get; set; }
             /*
             [ForeignKey("FightingCharacterID")]
             public FightingCharacter fightingCharacter { get; set; }
@@ -120,6 +122,11 @@ namespace RPG_menagment.Data.Model
             public int UserID { get; set; }
         }
 
+        public enum OrcTribe
+        {
+            BlackRock, BlackTooth, Frostwolf
+        }
+
         public class Orc
         {
             public int OrcID { get; set; }
@@ -128,10 +135,7 @@ namespace RPG_menagment.Data.Model
             [Required]
             public int Power { get; set; }
 
-            public enum Tribe
-            {
-                BlackRock, BlackTooth, Frostwolf
-            }
+            public OrcTribe OrcTribe { get; set; }
             /*
             [ForeignKey("FightingCharacterID")]
             public FightingCharacter fightingCharacter { get; set; }

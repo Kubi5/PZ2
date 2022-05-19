@@ -150,5 +150,17 @@ namespace RPG_menagment
             return getid;
         }
 
+        public static List<string> getTOP5()
+        {
+            var top5 = context.FightingCharacters
+                .OrderByDescending(x => x.Power)
+                .ThenBy(x => x.Name)
+                .Take(5)
+                .Select(x => x.Power + " -- " + x.Name + " -- " + x.UserName)
+                .ToList();
+
+            return top5;
+        }
+
     }
 }
