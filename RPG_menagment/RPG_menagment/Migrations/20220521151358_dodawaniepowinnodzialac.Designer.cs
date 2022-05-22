@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RPG_menagment.Data;
 
 namespace RPG_menagment.Migrations
 {
     [DbContext(typeof(RPGcontext))]
-    partial class RPGcontextModelSnapshot : ModelSnapshot
+    [Migration("20220521151358_dodawaniepowinnodzialac")]
+    partial class dodawaniepowinnodzialac
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -283,7 +285,7 @@ namespace RPG_menagment.Migrations
             modelBuilder.Entity("RPG_menagment.Data.Model.RPGmodel+Cave", b =>
                 {
                     b.HasOne("RPG_menagment.Data.Model.RPGmodel+User", "user")
-                        .WithMany("Caves")
+                        .WithMany()
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -292,7 +294,7 @@ namespace RPG_menagment.Migrations
             modelBuilder.Entity("RPG_menagment.Data.Model.RPGmodel+Dragon", b =>
                 {
                     b.HasOne("RPG_menagment.Data.Model.RPGmodel+User", "user")
-                        .WithMany("Dragons")
+                        .WithMany()
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -301,7 +303,7 @@ namespace RPG_menagment.Migrations
             modelBuilder.Entity("RPG_menagment.Data.Model.RPGmodel+Forest", b =>
                 {
                     b.HasOne("RPG_menagment.Data.Model.RPGmodel+User", "user")
-                        .WithMany("Forests")
+                        .WithMany()
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -310,7 +312,7 @@ namespace RPG_menagment.Migrations
             modelBuilder.Entity("RPG_menagment.Data.Model.RPGmodel+Magician", b =>
                 {
                     b.HasOne("RPG_menagment.Data.Model.RPGmodel+User", "user")
-                        .WithMany("Magicians")
+                        .WithMany()
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -319,7 +321,7 @@ namespace RPG_menagment.Migrations
             modelBuilder.Entity("RPG_menagment.Data.Model.RPGmodel+Orc", b =>
                 {
                     b.HasOne("RPG_menagment.Data.Model.RPGmodel+User", "user")
-                        .WithMany("Orcs")
+                        .WithMany()
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -328,7 +330,7 @@ namespace RPG_menagment.Migrations
             modelBuilder.Entity("RPG_menagment.Data.Model.RPGmodel+River", b =>
                 {
                     b.HasOne("RPG_menagment.Data.Model.RPGmodel+User", "user")
-                        .WithMany("Rivers")
+                        .WithMany()
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -337,7 +339,7 @@ namespace RPG_menagment.Migrations
             modelBuilder.Entity("RPG_menagment.Data.Model.RPGmodel+Soldier", b =>
                 {
                     b.HasOne("RPG_menagment.Data.Model.RPGmodel+User", "user")
-                        .WithMany("Soldiers")
+                        .WithMany()
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -346,7 +348,7 @@ namespace RPG_menagment.Migrations
             modelBuilder.Entity("RPG_menagment.Data.Model.RPGmodel+Tower", b =>
                 {
                     b.HasOne("RPG_menagment.Data.Model.RPGmodel+User", "user")
-                        .WithMany("Towers")
+                        .WithMany()
                         .HasForeignKey("UserID")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

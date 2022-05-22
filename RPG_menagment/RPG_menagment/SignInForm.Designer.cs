@@ -40,6 +40,7 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Century", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Control;
             this.label1.Location = new System.Drawing.Point(429, 73);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(242, 61);
@@ -58,13 +59,14 @@
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBox2.Location = new System.Drawing.Point(335, 418);
             this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(315, 22);
             this.textBox2.TabIndex = 5;
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // label4
             // 
             this.label4.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label4.ForeColor = System.Drawing.SystemColors.Control;
             this.label4.Location = new System.Drawing.Point(159, 170);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(282, 61);
@@ -74,6 +76,7 @@
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Century", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.SystemColors.Control;
             this.label2.Location = new System.Drawing.Point(159, 329);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(306, 61);

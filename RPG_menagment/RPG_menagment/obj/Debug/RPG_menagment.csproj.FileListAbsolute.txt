@@ -86,3 +86,6 @@ C:\Users\FiFi\PZ2\RPG_menagment\RPG_menagment\bin\Debug\zh-Hant\Microsoft.Data.S
 C:\Users\FiFi\PZ2\RPG_menagment\RPG_menagment\obj\Debug\RPG_menagment.MainApp.resources
 C:\Users\FiFi\PZ2\RPG_menagment\RPG_menagment\obj\Debug\RPG_menagment.ChangingPassword.resources
 C:\Users\FiFi\PZ2\RPG_menagment\RPG_menagment\obj\Debug\RPG_menagment.AddingCharacters.resources
+C:\Users\FiFi\PZ2\RPG_menagment\RPG_menagment\obj\Debug\RPG_menagment.AddingNature.resources
+C:\Users\FiFi\PZ2\RPG_menagment\RPG_menagment\obj\Debug\RPG_menagment.Deleting.resources
+C:\Users\FiFi\PZ2\RPG_menagment\RPG_menagment\obj\Debug\RPG_menagment.UserEquipment.resources

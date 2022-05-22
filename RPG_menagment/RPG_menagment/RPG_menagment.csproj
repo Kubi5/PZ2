@@ -156,6 +156,12 @@
     <Compile Include="AddingCharacters.Designer.cs">
       <DependentUpon>AddingCharacters.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddingNature.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddingNature.Designer.cs">
+      <DependentUpon>AddingNature.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangingPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -216,6 +222,14 @@
     <Compile Include="Migrations\20220519155300_mozeniezrobilemmigracji.designer.cs">
       <DependentUpon>20220519155300_mozeniezrobilemmigracji.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20220521151358_dodawaniepowinnodzialac.cs" />
+    <Compile Include="Migrations\20220521151358_dodawaniepowinnodzialac.designer.cs">
+      <DependentUpon>20220521151358_dodawaniepowinnodzialac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20220521172116_chybaostatnia.cs" />
+    <Compile Include="Migrations\20220521172116_chybaostatnia.designer.cs">
+      <DependentUpon>20220521172116_chybaostatnia.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\RPGcontextModelSnapshot.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -226,8 +240,17 @@
     <Compile Include="SignInForm.Designer.cs">
       <DependentUpon>SignInForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserEquipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserEquipment.Designer.cs">
+      <DependentUpon>UserEquipment.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AddingCharacters.resx">
       <DependentUpon>AddingCharacters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddingNature.resx">
+      <DependentUpon>AddingNature.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangingPassword.resx">
       <DependentUpon>ChangingPassword.cs</DependentUpon>
@@ -252,6 +275,9 @@
     </Compile>
     <EmbeddedResource Include="SignInForm.resx">
       <DependentUpon>SignInForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserEquipment.resx">
+      <DependentUpon>UserEquipment.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

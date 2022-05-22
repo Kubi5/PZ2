@@ -62,10 +62,10 @@
             // 
             this.textBox2.Location = new System.Drawing.Point(326, 428);
             this.textBox2.Name = "textBox2";
-            this.textBox2.PasswordChar = '*';
             this.textBox2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.textBox2.Size = new System.Drawing.Size(344, 22);
             this.textBox2.TabIndex = 7;
+            this.textBox2.UseSystemPasswordChar = true;
             // 
             // label4
             // 
@@ -101,9 +101,9 @@
             // 
             this.textBox3.Location = new System.Drawing.Point(326, 543);
             this.textBox3.Name = "textBox3";
-            this.textBox3.PasswordChar = '*';
             this.textBox3.Size = new System.Drawing.Size(344, 22);
             this.textBox3.TabIndex = 11;
+            this.textBox3.UseSystemPasswordChar = true;
             // 
             // button1
             // 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RPG_menagment.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,11 +15,15 @@ namespace RPG_menagment
     {
         JoinUsForm joinUsForm;
         SignInForm signInForm;
+
+        RPGcontext context = new RPGcontext();
+
         public Form1()
         {
             InitializeComponent();
             joinUsForm = new JoinUsForm();
             signInForm = new SignInForm();
+
 
         }
 

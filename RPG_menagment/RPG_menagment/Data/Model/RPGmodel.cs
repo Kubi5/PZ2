@@ -30,6 +30,17 @@ namespace RPG_menagment.Data.Model
                 Role = "logged";
                 Nickname = $"Guest{randomNumber}";
             }
+
+            public IList<Dragon> Dragons {get ; set;}
+            public IList<Soldier> Soldiers {get ; set;}
+            public IList<Magician> Magicians {get ; set;}
+            public IList<Orc> Orcs {get ; set;}
+            public IList<Cave> Caves {get ; set;}
+            public IList<Forest> Forests {get ; set;}
+            public IList<River> Rivers {get ; set;}
+            public IList<Tower> Towers {get ; set;}
+
+
         }
 
         public class FightingCharacter
@@ -41,6 +52,12 @@ namespace RPG_menagment.Data.Model
             public string Name { get; set; }
             [Required]
             public string UserName { get; set; }
+            public override string ToString()
+            {
+                return $"Character Name :{this.Name} \n" +
+                    $"Power :{this.Power} \n" +
+                    $"Owner: {this.UserName}";
+            }
 
         }
 
@@ -71,6 +88,10 @@ namespace RPG_menagment.Data.Model
             public User user { get; set; }
             public int UserID { get; set; }
 
+            public override string ToString()
+            {
+                return $"-{this.Name}- Wingspan: {this.Wingspan} Spicies:{this.dragonSpicies} Power:{this.Power}";
+            }
 
 
         }
@@ -97,6 +118,11 @@ namespace RPG_menagment.Data.Model
             [ForeignKey("UserID")]
             public User user { get; set; }
             public int UserID { get; set; }
+
+            public override string ToString()
+            {
+                return $"-{this.Name}- Power:{this.Power} Spiecies:{this.magicianSpicies}";
+            }
         }
 
         public class Soldier
@@ -120,6 +146,11 @@ namespace RPG_menagment.Data.Model
             [ForeignKey("UserID")]
             public User user { get; set; }
             public int UserID { get; set; }
+
+            public override string ToString()
+            {
+                return $"-{this.Name}- Power:{this.Power} Sword name:{this.Swordname}";
+            }
         }
 
         public enum OrcTribe
@@ -141,9 +172,15 @@ namespace RPG_menagment.Data.Model
             public FightingCharacter fightingCharacter { get; set; }
             public int FightingCharacterID { get; set; }
             */
+
             [ForeignKey("UserID")]
             public User user { get; set; }
             public int UserID { get; set; }
+
+            public override string ToString()
+            {
+                return $"-{this.Name}- Power:{this.Power} Tribe: {this.OrcTribe}";
+            }
         }
 
         public class Cave
@@ -152,8 +189,16 @@ namespace RPG_menagment.Data.Model
             [Required]
             public string Name { get; set; }
             [Required]
+            public int Area { get; set; }
 
-            public float Area { get; set; }
+            [ForeignKey("UserID")]
+            public User user { get; set; }
+            public int UserID { get; set; }
+
+            public override string ToString()
+            {
+                return $"-{this.Name}- Area:{this.Area}";
+            }
 
         }
 
@@ -163,9 +208,18 @@ namespace RPG_menagment.Data.Model
             [Required]
             public string Name { get; set; }
             [Required]
-            public float Height { get; set; }
+            public int Height { get; set; }
             [Required]
             public string Material { get; set; }
+
+            [ForeignKey("UserID")]
+            public User user { get; set; }
+            public int UserID { get; set; }
+
+            public override string ToString()
+            {
+                return $"-{this.Name}- Height:{this.Height} Material:{this.Material}";
+            }
 
         }
 
@@ -175,7 +229,16 @@ namespace RPG_menagment.Data.Model
             [Required]
             public string Name { get; set; }
             [Required]
-            public float Length { get; set; }
+            public int Length { get; set; }
+
+            [ForeignKey("UserID")]
+            public User user { get; set; }
+            public int UserID { get; set; }
+
+            public override string ToString()
+            {
+                return $"-{this.Name}- Lenght:{this.Length}";
+            }
 
         }
 
@@ -185,7 +248,16 @@ namespace RPG_menagment.Data.Model
             [Required]
             public string Name { get; set; }
             [Required]
-            public float Area { get; set; }
+            public int Area { get; set; }
+
+            [ForeignKey("UserID")]
+            public User user { get; set; }
+            public int UserID { get; set; }
+
+            public override string ToString()
+            {
+                return $"-{this.Name}- Area:{this.Area}";
+            }
         }
 
 

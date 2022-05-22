@@ -14,11 +14,13 @@ namespace RPG_menagment
     {
         ChangingPassword changingPassword;
         AddingCharacters addingCharacters;
+        AddingNature addingNature;
+        UserEquipment userEquipment;
         public MainApp()
         {
             InitializeComponent();
             changingPassword = new ChangingPassword();
-            
+            userEquipment = new UserEquipment();
         }
 
         public string createHeaderforTOP5()
@@ -70,6 +72,15 @@ namespace RPG_menagment
 
         private void MainApp_Load(object sender, EventArgs e)
         {
+            ContextActions.clearUsersItems();
+            ContextActions.setUsersItems();
+
+            listView1.Items.Clear();
+
+            foreach(string item in ContextActions.showLatestUpdate(5))
+            { listView1.Items.Add(item); }
+
+            comboBox1.Items.Clear();
             AddFighters();
             createTOP5();
         }
@@ -99,9 +110,62 @@ namespace RPG_menagment
             }
             else
             {
-                addingCharacters = new AddingCharacters(comboBox1.Text);
-                addingCharacters.ShowDialog();
+                if (checkBox1.Checked == true)
+                {
+                    addingCharacters = new AddingCharacters(comboBox1.Text);
+                    addingCharacters.ShowDialog();
+
+                    createTOP5();
+
+                    listView1.Items.Clear();
+
+                    foreach (string item in ContextActions.showLatestUpdate(5))
+                    { listView1.Items.Add(item); }
+                }
+                else
+                {
+                    addingNature = new AddingNature(comboBox1.Text);
+                    addingNature.ShowDialog();
+                }
             }
+        }
+
+        int i = 5;
+
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            if((i+1) > ContextActions.numbersOfRowsInFightersDB())
+            {
+                return;
+            }
+            label8.Text = (i + 1).ToString();
+            listView1.Items.Clear();
+            foreach(string item in ContextActions.showLatestUpdate(i + 1))
+            {
+                listView1.Items.Add(item);
+            }
+            i = i+1;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            if ((i - 1) < 0)
+            {
+                return;
+            }
+            label8.Text = (i - 1).ToString();
+            listView1.Items.Clear();
+            foreach (string item in ContextActions.showLatestUpdate(i - 1))
+            {
+                listView1.Items.Add(item);
+            }
+            i = i - 1;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            userEquipment.ShowDialog();
         }
     }
 }
