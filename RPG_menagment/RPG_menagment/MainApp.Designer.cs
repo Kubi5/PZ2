@@ -275,6 +275,7 @@
             this.Controls.Add(this.label1);
             this.Name = "MainApp";
             this.Text = "MainApp";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainApp_FormClosing);
             this.Load += new System.EventHandler(this.MainApp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

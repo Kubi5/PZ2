@@ -23,6 +23,36 @@ namespace RPG_menagment
             userEquipment = new UserEquipment();
         }
 
+        public void showLoggedUserDisplay()
+        {
+            label5.Visible = false;
+            button4.Visible = false;
+            button5.Visible = false;
+        }
+        public void showAdminDisplay()
+        {
+            checkBox1.Visible = false;
+            checkBox2.Visible = false;  
+            comboBox1.Visible = false;
+            button1.Visible = false;
+            button7.Visible = false;
+            button3.Visible = false;
+            label4.Visible = false;
+        }
+        public void showSpectatorDisplay()
+        {
+            label5.Visible = false;
+            button4.Visible = false;
+            button5.Visible = false;
+            label4.Visible = false;
+            button3.Visible = false;
+            checkBox1.Visible = false;
+            checkBox2.Visible = false;
+            comboBox1.Visible = false;
+            button1.Visible = false;
+            button7.Visible = false;
+        }
+
         public string createHeaderforTOP5()
         {
             return $"No. -- Power -- Character -- Gamer\n" +
@@ -66,14 +96,27 @@ namespace RPG_menagment
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
             changingPassword.ShowDialog();
         }
 
         private void MainApp_Load(object sender, EventArgs e)
         {
-            ContextActions.clearUsersItems();
-            ContextActions.setUsersItems();
+            switch (LoggedUser.Role)
+            {
+                case null:
+                    this.showSpectatorDisplay();
+                    break;
+
+                case "logged":
+                    this.showLoggedUserDisplay();
+                    ContextActions.clearUsersItems();
+                    ContextActions.setUsersItems();
+                    break;
+                case "ADMIN":
+                    this.showAdminDisplay();
+                    break;
+            }
+            
 
             listView1.Items.Clear();
 
@@ -166,6 +209,11 @@ namespace RPG_menagment
         private void button7_Click(object sender, EventArgs e)
         {
             userEquipment.ShowDialog();
+        }
+
+        private void MainApp_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            LoggedUser.Role = null;
         }
     }
 }

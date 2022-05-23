@@ -393,8 +393,84 @@ namespace RPG_menagment
                 context.FightingCharacters.Remove(context.FightingCharacters.Find(id));
 
                 context.SaveChanges();
+                return;
             }
-            
+
+            var magician = context.Magicians.Where(x => x.Name == itemToDelete).Select(x => x.MagicianID).FirstOrDefault();
+            if (!magician.Equals(0))
+            {
+                int id = context.FightingCharacters.Where(x => x.Name == itemToDelete).Select(x => x.FightingCharacterID).FirstOrDefault();
+
+                context.Magicians.Remove(context.Magicians.Find(magician));
+                context.Users.Find(LoggedUser.ID).Magicians.Remove(context.Magicians.Find(magician));
+                context.FightingCharacters.Remove(context.FightingCharacters.Find(id));
+
+                context.SaveChanges();
+                return;
+            }
+            var soldier = context.Soldiers.Where(x => x.Name == itemToDelete).Select(x => x.SoldierID).FirstOrDefault();
+            if (!soldier.Equals(0))
+            {
+                int id = context.FightingCharacters.Where(x => x.Name == itemToDelete).Select(x => x.FightingCharacterID).FirstOrDefault();
+
+                context.Soldiers.Remove(context.Soldiers.Find(soldier));
+                context.Users.Find(LoggedUser.ID).Soldiers.Remove(context.Soldiers.Find(soldier));
+                context.FightingCharacters.Remove(context.FightingCharacters.Find(id));
+
+                context.SaveChanges();
+                return;
+            }
+            var orc = context.Orcs.Where(x => x.Name == itemToDelete).Select(x => x.OrcID).FirstOrDefault();
+            if (!orc.Equals(0))
+            {
+                int id = context.FightingCharacters.Where(x => x.Name == itemToDelete).Select(x => x.FightingCharacterID).FirstOrDefault();
+
+                context.Orcs.Remove(context.Orcs.Find(orc));
+                context.Users.Find(LoggedUser.ID).Orcs.Remove(context.Orcs.Find(orc));
+                context.FightingCharacters.Remove(context.FightingCharacters.Find(id));
+
+                context.SaveChanges();
+                return;
+            }
+            var cave = context.Caves.Where(x => x.Name == itemToDelete).Select(x => x.CaveID).FirstOrDefault();
+            if (!cave.Equals(0))
+            {
+                context.Caves.Remove(context.Caves.Find(cave));
+                context.Users.Find(LoggedUser.ID).Caves.Remove(context.Caves.Find(cave));
+
+                context.SaveChanges();
+                return;
+            }
+            var tower = context.Towers.Where(x => x.Name == itemToDelete).Select(x => x.TowerID).FirstOrDefault();
+            if (!tower.Equals(0))
+            {
+                context.Towers.Remove(context.Towers.Find(tower));
+                context.Users.Find(LoggedUser.ID).Towers.Remove(context.Towers.Find(tower));
+
+                context.SaveChanges();
+                return;
+            }
+            var forest = context.Forests.Where(x => x.Name == itemToDelete).Select(x => x.ForestID).FirstOrDefault();
+            if (!forest.Equals(0))
+            {
+                context.Forests.Remove(context.Forests.Find(forest));
+                context.Users.Find(LoggedUser.ID).Forests.Remove(context.Forests.Find(forest));
+
+                context.SaveChanges();
+                return;
+            }
+            var river = context.Rivers.Where(x => x.Name == itemToDelete).Select(x => x.RiverID).FirstOrDefault();
+            if (!river.Equals(0))
+            {
+                context.Rivers.Remove(context.Rivers.Find(river));
+                context.Users.Find(LoggedUser.ID).Rivers.Remove(context.Rivers.Find(river));
+
+                context.SaveChanges();
+                return;
+            }
+
+
+
         }
 
         
