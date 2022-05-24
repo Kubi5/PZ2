@@ -1,0 +1,16 @@
+C:\Users\FiFi\TestoweRepoPZ2\MyFirstControl\MyFirstControl\bin\Debug\MyFirstControl.dll
+C:\Users\FiFi\TestoweRepoPZ2\MyFirstControl\MyFirstControl\bin\Debug\MyFirstControl.pdb
+C:\Users\FiFi\TestoweRepoPZ2\MyFirstControl\MyFirstControl\obj\Debug\MyFirstControl.csproj.AssemblyReference.cache
+C:\Users\FiFi\TestoweRepoPZ2\MyFirstControl\MyFirstControl\obj\Debug\MyFirstControl.csproj.GenerateResource.cache
+C:\Users\FiFi\TestoweRepoPZ2\MyFirstControl\MyFirstControl\obj\Debug\MyFirstControl.csproj.CoreCompileInputs.cache
+C:\Users\FiFi\TestoweRepoPZ2\MyFirstControl\MyFirstControl\obj\Debug\MyFirstControl.dll
+C:\Users\FiFi\TestoweRepoPZ2\MyFirstControl\MyFirstControl\obj\Debug\MyFirstControl.pdb
+C:\Users\FiFi\TestoweRepoPZ2\MyFirstControl\MyFirstControl\obj\Debug\MyFirstControl.PasswordValidator.resources
+C:\Users\FiFi\PZ2\PasswordControl\MyFirstControl\bin\Debug\MyFirstControl.dll
+C:\Users\FiFi\PZ2\PasswordControl\MyFirstControl\bin\Debug\MyFirstControl.pdb
+C:\Users\FiFi\PZ2\PasswordControl\MyFirstControl\obj\Debug\MyFirstControl.csproj.AssemblyReference.cache
+C:\Users\FiFi\PZ2\PasswordControl\MyFirstControl\obj\Debug\MyFirstControl.PasswordValidator.resources
+C:\Users\FiFi\PZ2\PasswordControl\MyFirstControl\obj\Debug\MyFirstControl.csproj.GenerateResource.cache
+C:\Users\FiFi\PZ2\PasswordControl\MyFirstControl\obj\Debug\MyFirstControl.csproj.CoreCompileInputs.cache
+C:\Users\FiFi\PZ2\PasswordControl\MyFirstControl\obj\Debug\MyFirstControl.dll
+C:\Users\FiFi\PZ2\PasswordControl\MyFirstControl\obj\Debug\MyFirstControl.pdb
