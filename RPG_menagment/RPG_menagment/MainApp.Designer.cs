@@ -147,6 +147,7 @@
             this.button5.TabIndex = 13;
             this.button5.Text = "Change user\'s password";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button7
             // 
@@ -167,6 +168,7 @@
             this.label6.Size = new System.Drawing.Size(459, 61);
             this.label6.TabIndex = 16;
             this.label6.Text = "Welcome Warrior!";
+            this.label6.Visible = false;
             // 
             // checkBox1
             // 

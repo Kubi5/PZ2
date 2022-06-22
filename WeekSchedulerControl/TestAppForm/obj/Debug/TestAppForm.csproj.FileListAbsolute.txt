@@ -1,0 +1,14 @@
+C:\Users\FiFi\PZ2\WeekSchedulerControl\TestAppForm\bin\Debug\TestAppForm.exe.config
+C:\Users\FiFi\PZ2\WeekSchedulerControl\TestAppForm\bin\Debug\TestAppForm.exe
+C:\Users\FiFi\PZ2\WeekSchedulerControl\TestAppForm\bin\Debug\TestAppForm.pdb
+C:\Users\FiFi\PZ2\WeekSchedulerControl\TestAppForm\bin\Debug\WeekSchedulerControl.dll
+C:\Users\FiFi\PZ2\WeekSchedulerControl\TestAppForm\bin\Debug\WeekSchedulerControl.pdb
+C:\Users\FiFi\PZ2\WeekSchedulerControl\TestAppForm\obj\Debug\TestAppForm.csproj.AssemblyReference.cache
+C:\Users\FiFi\PZ2\WeekSchedulerControl\TestAppForm\obj\Debug\TestAppForm.csproj.SuggestedBindingRedirects.cache
+C:\Users\FiFi\PZ2\WeekSchedulerControl\TestAppForm\obj\Debug\TestAppForm.Form1.resources
+C:\Users\FiFi\PZ2\WeekSchedulerControl\TestAppForm\obj\Debug\TestAppForm.Properties.Resources.resources
+C:\Users\FiFi\PZ2\WeekSchedulerControl\TestAppForm\obj\Debug\TestAppForm.csproj.GenerateResource.cache
+C:\Users\FiFi\PZ2\WeekSchedulerControl\TestAppForm\obj\Debug\TestAppForm.csproj.CoreCompileInputs.cache
+C:\Users\FiFi\PZ2\WeekSchedulerControl\TestAppForm\obj\Debug\TestAppForm.csproj.CopyComplete
+C:\Users\FiFi\PZ2\WeekSchedulerControl\TestAppForm\obj\Debug\TestAppForm.exe
+C:\Users\FiFi\PZ2\WeekSchedulerControl\TestAppForm\obj\Debug\TestAppForm.pdb

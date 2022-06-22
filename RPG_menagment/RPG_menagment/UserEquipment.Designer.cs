@@ -112,6 +112,7 @@
             this.checkBox2.TabIndex = 19;
             this.checkBox2.Text = "MODIFY";
             this.checkBox2.UseVisualStyleBackColor = true;
+            this.checkBox2.Visible = false;
             // 
             // UserEquipment
             // 

@@ -1,0 +1,9 @@
+C:\Users\FiFi\PZ2\WeekSchedulerControl\WeekSchedulerControl\bin\Debug\WeekSchedulerControl.dll
+C:\Users\FiFi\PZ2\WeekSchedulerControl\WeekSchedulerControl\bin\Debug\WeekSchedulerControl.pdb
+C:\Users\FiFi\PZ2\WeekSchedulerControl\WeekSchedulerControl\obj\Debug\WeekSchedulerControl.csproj.AssemblyReference.cache
+C:\Users\FiFi\PZ2\WeekSchedulerControl\WeekSchedulerControl\obj\Debug\WeekSchedulerControl.UserControl1.resources
+C:\Users\FiFi\PZ2\WeekSchedulerControl\WeekSchedulerControl\obj\Debug\WeekSchedulerControl.csproj.GenerateResource.cache
+C:\Users\FiFi\PZ2\WeekSchedulerControl\WeekSchedulerControl\obj\Debug\WeekSchedulerControl.csproj.CoreCompileInputs.cache
+C:\Users\FiFi\PZ2\WeekSchedulerControl\WeekSchedulerControl\obj\Debug\WeekSchedulerControl.dll
+C:\Users\FiFi\PZ2\WeekSchedulerControl\WeekSchedulerControl\obj\Debug\WeekSchedulerControl.pdb
+C:\Users\FiFi\PZ2\WeekSchedulerControl\WeekSchedulerControl\obj\Debug\WeekSchedulerControl.TaskWindow.resources

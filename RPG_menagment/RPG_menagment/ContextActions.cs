@@ -469,9 +469,25 @@ namespace RPG_menagment
                 return;
             }
 
-
-
         }
+
+        public static List<String> getAllUsers()
+        {
+            List<String> allusers = new List<String>();
+
+            var users = context.Users
+                .Where(x => x.Role.Equals("logged"))
+                .Select(x => x);
+
+            foreach(var user in users)
+            {
+                allusers.Add(user.ToString());
+            }
+
+            return allusers;
+        }
+
+        
 
         
     }

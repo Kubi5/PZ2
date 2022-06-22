@@ -88,3 +88,4 @@ C:\Users\FiFi\PZ2\RPG_menagment\RPG_menagment\obj\Debug\RPG_menagment.ChangingPa
 C:\Users\FiFi\PZ2\RPG_menagment\RPG_menagment\obj\Debug\RPG_menagment.AddingCharacters.resources
 C:\Users\FiFi\PZ2\RPG_menagment\RPG_menagment\obj\Debug\RPG_menagment.AddingNature.resources
 C:\Users\FiFi\PZ2\RPG_menagment\RPG_menagment\obj\Debug\RPG_menagment.UserEquipment.resources
+C:\Users\FiFi\PZ2\RPG_menagment\RPG_menagment\obj\Debug\RPG_menagment.AdminChangingPasswords.resources

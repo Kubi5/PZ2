@@ -14,8 +14,7 @@ namespace RPG_menagment.Data.Model
     {
         public class User
         {
-            public int UserID
-            { get; set; }
+            public int UserID { get; set; }
             [Required]
             public string Email { get; set; }
             [Required]
@@ -40,7 +39,10 @@ namespace RPG_menagment.Data.Model
             public IList<River> Rivers {get ; set;}
             public IList<Tower> Towers {get ; set;}
 
-
+            public override string ToString()
+            {
+                return $"ID: {UserID}, Email: -{Email}-, Nickname: {Nickname}";
+            }
         }
 
         public class FightingCharacter

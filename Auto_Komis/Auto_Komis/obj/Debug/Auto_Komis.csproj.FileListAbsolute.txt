@@ -10,3 +10,15 @@ C:\Users\FiFi\source\repos\Auto_Komis\Auto_Komis\obj\Debug\Auto_Komis.csproj.Gen
 C:\Users\FiFi\source\repos\Auto_Komis\Auto_Komis\obj\Debug\Auto_Komis.csproj.CoreCompileInputs.cache
 C:\Users\FiFi\source\repos\Auto_Komis\Auto_Komis\obj\Debug\Auto_Komis.exe
 C:\Users\FiFi\source\repos\Auto_Komis\Auto_Komis\obj\Debug\Auto_Komis.pdb
+C:\Users\FiFi\PZ2\Auto_Komis\Auto_Komis\bin\Debug\Auto_Komis.exe.config
+C:\Users\FiFi\PZ2\Auto_Komis\Auto_Komis\bin\Debug\Auto_Komis.exe
+C:\Users\FiFi\PZ2\Auto_Komis\Auto_Komis\bin\Debug\Auto_Komis.pdb
+C:\Users\FiFi\PZ2\Auto_Komis\Auto_Komis\obj\Debug\Auto_Komis.csproj.AssemblyReference.cache
+C:\Users\FiFi\PZ2\Auto_Komis\Auto_Komis\obj\Debug\Auto_Komis.csproj.SuggestedBindingRedirects.cache
+C:\Users\FiFi\PZ2\Auto_Komis\Auto_Komis\obj\Debug\Auto_Komis.Form1.resources
+C:\Users\FiFi\PZ2\Auto_Komis\Auto_Komis\obj\Debug\Auto_Komis.Form2.resources
+C:\Users\FiFi\PZ2\Auto_Komis\Auto_Komis\obj\Debug\Auto_Komis.Properties.Resources.resources
+C:\Users\FiFi\PZ2\Auto_Komis\Auto_Komis\obj\Debug\Auto_Komis.csproj.GenerateResource.cache
+C:\Users\FiFi\PZ2\Auto_Komis\Auto_Komis\obj\Debug\Auto_Komis.csproj.CoreCompileInputs.cache
+C:\Users\FiFi\PZ2\Auto_Komis\Auto_Komis\obj\Debug\Auto_Komis.exe
+C:\Users\FiFi\PZ2\Auto_Komis\Auto_Komis\obj\Debug\Auto_Komis.pdb

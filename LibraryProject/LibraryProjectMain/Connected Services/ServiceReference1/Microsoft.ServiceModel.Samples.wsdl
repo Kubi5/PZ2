@@ -1,0 +1,193 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://Microsoft.ServiceModel.Samples" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" targetNamespace="http://Microsoft.ServiceModel.Samples" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://Microsoft.ServiceModel.Samples/Imports">
+      <xsd:import namespace="http://Microsoft.ServiceModel.Samples" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/LibraryProjectLib.Data.Models" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ILibraryService_AddUserToDatabase_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddUserToDatabase" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_AddUserToDatabase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddUserToDatabaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_IfUserExist_InputMessage">
+    <wsdl:part name="parameters" element="tns:IfUserExist" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_IfUserExist_OutputMessage">
+    <wsdl:part name="parameters" element="tns:IfUserExistResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_AddBookToDatabase_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddBookToDatabase" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_AddBookToDatabase_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddBookToDatabaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_ReturnsBooks_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnsBooks" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_ReturnsBooks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnsBooksResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_ReturnBookTypes_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnBookTypes" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_ReturnBookTypes_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnBookTypesResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_ReturnAvailableCurrency_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnAvailableCurrency" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_ReturnAvailableCurrency_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnAvailableCurrencyResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_GetPageNumbers_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPageNumbers" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_GetPageNumbers_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPageNumbersResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_GetAllBooksObject_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksObject" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_GetAllBooksObject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllBooksObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_GetAllFilteredBooks_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFilteredBooks" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_GetAllFilteredBooks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFilteredBooksResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_getUserRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserRole" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_getUserRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_AddAdmin_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAdmin" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_AddAdmin_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAdminResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_LoanBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:LoanBook" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_LoanBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoanBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_ReturnUserID_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnUserID" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_ReturnUserID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnUserIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_ReturnLoanInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnLoanInfo" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_ReturnLoanInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ReturnLoanInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_RemoveBook_InputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveBook" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_RemoveBook_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RemoveBookResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_getLoanObject_InputMessage">
+    <wsdl:part name="parameters" element="tns:getLoanObject" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_getLoanObject_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getLoanObjectResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_ClearUserBooks_InputMessage">
+    <wsdl:part name="parameters" element="tns:ClearUserBooks" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_ClearUserBooks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ClearUserBooksResponse" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_FillUserBooks_InputMessage">
+    <wsdl:part name="parameters" element="tns:FillUserBooks" />
+  </wsdl:message>
+  <wsdl:message name="ILibraryService_FillUserBooks_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FillUserBooksResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ILibraryService">
+    <wsdl:operation name="AddUserToDatabase">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/AddUserToDatabase" message="tns:ILibraryService_AddUserToDatabase_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/AddUserToDatabaseResponse" message="tns:ILibraryService_AddUserToDatabase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="IfUserExist">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/IfUserExist" message="tns:ILibraryService_IfUserExist_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/IfUserExistResponse" message="tns:ILibraryService_IfUserExist_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddBookToDatabase">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/AddBookToDatabase" message="tns:ILibraryService_AddBookToDatabase_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/AddBookToDatabaseResponse" message="tns:ILibraryService_AddBookToDatabase_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnsBooks">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/ReturnsBooks" message="tns:ILibraryService_ReturnsBooks_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/ReturnsBooksResponse" message="tns:ILibraryService_ReturnsBooks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnBookTypes">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/ReturnBookTypes" message="tns:ILibraryService_ReturnBookTypes_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/ReturnBookTypesResponse" message="tns:ILibraryService_ReturnBookTypes_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnAvailableCurrency">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/ReturnAvailableCurrency" message="tns:ILibraryService_ReturnAvailableCurrency_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/ReturnAvailableCurrencyResponse" message="tns:ILibraryService_ReturnAvailableCurrency_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPageNumbers">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/GetPageNumbers" message="tns:ILibraryService_GetPageNumbers_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/GetPageNumbersResponse" message="tns:ILibraryService_GetPageNumbers_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllBooksObject">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/GetAllBooksObject" message="tns:ILibraryService_GetAllBooksObject_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/GetAllBooksObjectResponse" message="tns:ILibraryService_GetAllBooksObject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFilteredBooks">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/GetAllFilteredBooks" message="tns:ILibraryService_GetAllFilteredBooks_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/GetAllFilteredBooksResponse" message="tns:ILibraryService_GetAllFilteredBooks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserRole">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/getUserRole" message="tns:ILibraryService_getUserRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/getUserRoleResponse" message="tns:ILibraryService_getUserRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAdmin">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/AddAdmin" message="tns:ILibraryService_AddAdmin_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/AddAdminResponse" message="tns:ILibraryService_AddAdmin_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="LoanBook">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/LoanBook" message="tns:ILibraryService_LoanBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/LoanBookResponse" message="tns:ILibraryService_LoanBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnUserID">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/ReturnUserID" message="tns:ILibraryService_ReturnUserID_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/ReturnUserIDResponse" message="tns:ILibraryService_ReturnUserID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ReturnLoanInfo">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/ReturnLoanInfo" message="tns:ILibraryService_ReturnLoanInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/ReturnLoanInfoResponse" message="tns:ILibraryService_ReturnLoanInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RemoveBook">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/RemoveBook" message="tns:ILibraryService_RemoveBook_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/RemoveBookResponse" message="tns:ILibraryService_RemoveBook_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getLoanObject">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/getLoanObject" message="tns:ILibraryService_getLoanObject_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/getLoanObjectResponse" message="tns:ILibraryService_getLoanObject_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ClearUserBooks">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/ClearUserBooks" message="tns:ILibraryService_ClearUserBooks_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/ClearUserBooksResponse" message="tns:ILibraryService_ClearUserBooks_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FillUserBooks">
+      <wsdl:input wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/FillUserBooks" message="tns:ILibraryService_FillUserBooks_InputMessage" />
+      <wsdl:output wsaw:Action="http://Microsoft.ServiceModel.Samples/ILibraryService/FillUserBooksResponse" message="tns:ILibraryService_FillUserBooks_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

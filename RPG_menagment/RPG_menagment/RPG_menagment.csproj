@@ -162,6 +162,12 @@
     <Compile Include="AddingNature.Designer.cs">
       <DependentUpon>AddingNature.cs</DependentUpon>
     </Compile>
+    <Compile Include="AdminChangingPasswords.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminChangingPasswords.Designer.cs">
+      <DependentUpon>AdminChangingPasswords.cs</DependentUpon>
+    </Compile>
     <Compile Include="ChangingPassword.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -251,6 +257,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AddingNature.resx">
       <DependentUpon>AddingNature.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminChangingPasswords.resx">
+      <DependentUpon>AdminChangingPasswords.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ChangingPassword.resx">
       <DependentUpon>ChangingPassword.cs</DependentUpon>

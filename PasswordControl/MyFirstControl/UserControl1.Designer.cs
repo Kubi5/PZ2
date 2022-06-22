@@ -83,13 +83,14 @@
             // 
             // label7
             // 
+            this.label7.AccessibleName = "label7";
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label7.Location = new System.Drawing.Point(107, 101);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(288, 22);
+            this.label7.Size = new System.Drawing.Size(246, 22);
             this.label7.TabIndex = 7;
-            this.label7.Text = "min. character provided (default: 8)";
+            this.label7.Text = "at least 8 characters provided";
             // 
             // label8
             // 
@@ -136,6 +137,7 @@
             this.Controls.Add(this.label2);
             this.Name = "PasswordValidator";
             this.Size = new System.Drawing.Size(431, 307);
+            this.Load += new System.EventHandler(this.PasswordValidator_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

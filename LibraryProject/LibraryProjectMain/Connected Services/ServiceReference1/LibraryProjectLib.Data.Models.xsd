@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/LibraryProjectLib.Data.Models" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/LibraryProjectLib.Data.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfLibraryModels.Book">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="LibraryModels.Book" nillable="true" type="tns:LibraryModels.Book" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfLibraryModels.Book" nillable="true" type="tns:ArrayOfLibraryModels.Book" />
+  <xs:complexType name="LibraryModels.Book">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Author" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="BookID" type="xs:int" />
+      <xs:element minOccurs="0" name="BookType" type="tns:LibraryModels.BookType" />
+      <xs:element minOccurs="0" name="Currency" type="tns:LibraryModels.Currency" />
+      <xs:element minOccurs="0" name="Pages" type="xs:int" />
+      <xs:element minOccurs="0" name="Price" type="xs:int" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:int" />
+      <xs:element minOccurs="0" name="user" nillable="true" type="tns:LibraryModels.User" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LibraryModels.Book" nillable="true" type="tns:LibraryModels.Book" />
+  <xs:simpleType name="LibraryModels.BookType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ForKids" />
+      <xs:enumeration value="Thriller" />
+      <xs:enumeration value="Tragedy" />
+      <xs:enumeration value="War" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LibraryModels.BookType" nillable="true" type="tns:LibraryModels.BookType" />
+  <xs:simpleType name="LibraryModels.Currency">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="PLN" />
+      <xs:enumeration value="EUR" />
+      <xs:enumeration value="USD" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="LibraryModels.Currency" nillable="true" type="tns:LibraryModels.Currency" />
+  <xs:complexType name="LibraryModels.User">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Books" nillable="true" type="tns:ArrayOfLibraryModels.Book" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Role" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LibraryModels.User" nillable="true" type="tns:LibraryModels.User" />
+  <xs:complexType name="LibraryModels.Loan">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BookID" type="xs:int" />
+      <xs:element minOccurs="0" name="DateOfLoan" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateOfReturn" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="LoanID" type="xs:int" />
+      <xs:element minOccurs="0" name="UserID" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="LibraryModels.Loan" nillable="true" type="tns:LibraryModels.Loan" />
+</xs:schema>

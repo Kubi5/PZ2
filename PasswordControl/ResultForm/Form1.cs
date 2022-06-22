@@ -22,5 +22,10 @@ namespace ResultForm
             passwordValidator1.passwordControl(textBox1.Text);
             
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

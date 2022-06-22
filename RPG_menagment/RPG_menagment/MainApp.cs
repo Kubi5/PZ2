@@ -16,12 +16,33 @@ namespace RPG_menagment
         AddingCharacters addingCharacters;
         AddingNature addingNature;
         UserEquipment userEquipment;
+        AdminChangingPasswords adminChangingPasswords;
         public MainApp()
         {
             InitializeComponent();
             changingPassword = new ChangingPassword();
             userEquipment = new UserEquipment();
+            adminChangingPasswords = new AdminChangingPasswords();
         }
+
+        public void showWelcomeLabel()
+        {
+            Label label = new Label();
+            if (!(LoggedUser.Nickname is null))
+            {
+                label.Text = $"Welcome {LoggedUser.Nickname}!";
+            }
+            else
+            {
+                label.Text = $"Welcome spectator!";
+            }
+            label.Location = new Point(220, 20);
+            label.AutoSize = false;
+            label.Size = new Size(459,61);
+            label.Font = new Font("Century", 26, FontStyle.Bold | FontStyle.Underline);
+            label.ForeColor = Color.White;
+            this.Controls.Add(label);
+        }   
 
         public void showLoggedUserDisplay()
         {
@@ -101,6 +122,8 @@ namespace RPG_menagment
 
         private void MainApp_Load(object sender, EventArgs e)
         {
+            this.showWelcomeLabel();
+
             switch (LoggedUser.Role)
             {
                 case null:
@@ -214,6 +237,11 @@ namespace RPG_menagment
         private void MainApp_FormClosing(object sender, FormClosingEventArgs e)
         {
             LoggedUser.Role = null;
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            adminChangingPasswords.ShowDialog();
         }
     }
 }

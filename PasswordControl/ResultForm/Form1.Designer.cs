@@ -42,7 +42,7 @@
             // 
             // passwordValidator1
             // 
-            this.passwordValidator1.Bigletters = 8;
+            this.passwordValidator1.Bigletters = 10;
             this.passwordValidator1.charList = new char[] {
         '/',
         '?',
@@ -52,6 +52,10 @@
         '%'};
             this.passwordValidator1.Location = new System.Drawing.Point(172, 23);
             this.passwordValidator1.Name = "passwordValidator1";
+            this.passwordValidator1.ShowCapitalLetters = false;
+            this.passwordValidator1.ShowDigit = true;
+            this.passwordValidator1.ShowMinNumbers = true;
+            this.passwordValidator1.ShowSpecialChars = false;
             this.passwordValidator1.Size = new System.Drawing.Size(431, 307);
             this.passwordValidator1.TabIndex = 0;
             // 
@@ -64,6 +68,7 @@
             this.Controls.Add(this.passwordValidator1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

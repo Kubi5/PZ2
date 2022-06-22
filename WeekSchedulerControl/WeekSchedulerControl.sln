@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeekSchedulerControl", "WeekSchedulerControl\WeekSchedulerControl.csproj", "{EC2EC479-3FCF-4457-A20B-E708819CB76D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAppForm", "TestAppForm\TestAppForm.csproj", "{95B53E47-C8DF-4CDB-8D4A-D84601937266}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC2EC479-3FCF-4457-A20B-E708819CB76D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC2EC479-3FCF-4457-A20B-E708819CB76D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC2EC479-3FCF-4457-A20B-E708819CB76D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC2EC479-3FCF-4457-A20B-E708819CB76D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95B53E47-C8DF-4CDB-8D4A-D84601937266}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95B53E47-C8DF-4CDB-8D4A-D84601937266}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95B53E47-C8DF-4CDB-8D4A-D84601937266}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95B53E47-C8DF-4CDB-8D4A-D84601937266}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EE07F85-99FC-4815-8056-A4246A2E9386}
+	EndGlobalSection
+EndGlobal
